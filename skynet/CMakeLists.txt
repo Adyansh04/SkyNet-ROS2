@@ -30,12 +30,7 @@ include_directories(
 
 add_executable(teleop src/teleop.cpp)
 
-ament_target_dependencies(teleop
-  rclcpp
-  std_srvs
-  sensor_msgs
-  geometry_msgs
-)
+
 
 # add_executable(crazyflie_server 
 # src/crazyflie_server.cpp
@@ -68,7 +63,7 @@ install(TARGETS
   # setParam
   # downloadUSDLogfile
   # #
-  teleop
+  # teleop
   # crazyflie_server
   DESTINATION lib/${PROJECT_NAME})
 
