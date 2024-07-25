@@ -58,17 +58,16 @@ SkyNet-ROS2 provides a comprehensive solution for Crazyflie 2.1 drones, offering
 ## Running the Project
 To launch the various functionalities, use the provided launch files:
 
-### AIDECK Streaming:
-```bash
-ros2 launch skynet aideck_streamer.yaml
-```
-
 ### Multi-ranger Mapping:
+
+Uses SLAM Toolbox for Mapping.
 ```bash
 ros2 launch skynet multiranger_mapping_launch.py
 ```
 
 ### Multi-ranger Navigation:
+
+The `multiranger_nav2_launch.py` script enables autonomous navigation for Crazyflie 2.1 drones using the ROS 2 Navigation Stack.
 ```bash
 ros2 launch skynet multiranger_nav2_launch.py
 ```
