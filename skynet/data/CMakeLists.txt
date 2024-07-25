@@ -9,7 +9,6 @@ find_package(tf2_ros REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(crazyflie_interfaces REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(motion_capture_tracking_interfaces REQUIRED)
 find_package(Eigen3 REQUIRED)
@@ -35,7 +34,6 @@ ament_target_dependencies(teleop
   rclcpp
   std_srvs
   sensor_msgs
-  crazyflie_interfaces
   geometry_msgs
 )
 
